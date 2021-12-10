@@ -10,7 +10,7 @@
     "build": "tsc -p .",
     "prebuild": "rimraf dist",
     "lint": "eslint \"{src,tests}/**/*.ts\"",
-    "prettier": "prettier --config .prettierrc \"{src,tests}/**/*.ts\" --write",
+    "fmt": "prettier --config .prettierrc \"{src,tests}/**/*.ts\" --write",
     "prepublish": "npm run build && npm run prettier",
     "test": "mocha --require ts-node/register \"tests/**/*.test.ts\"",
     "dev": "nodemon --watch src --watch tests --exec \"npm run build && npm run test\""
